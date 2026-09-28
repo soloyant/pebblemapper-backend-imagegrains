@@ -1,0 +1,10 @@
+# ImageGrains 1.x: Cellpose 2, a CNN that runs on a CPU in seconds.
+name: pm-imagegrains1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - imagegrains==1.2.1
+      - pillow-heif
