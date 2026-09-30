@@ -1,6 +1,7 @@
-# ImageGrains 2.0: Cellpose-SAM, a transformer. pip installs a CPU-only
-# torch; install a CUDA build of torch first on a machine with a GPU of
-# several GB, or expect minutes per 256-px tile on the CPU.
+# ImageGrains 2.0: Cellpose-SAM, a transformer. CUDA 12.1 wheels of PyTorch,
+# the build the adapter was tested with on a 4 GB GPU. On a machine without an
+# NVIDIA GPU, drop the two index lines and the two torch lines (pip then
+# installs the CPU build) and expect minutes per 256-px tile.
 name: pm-imagegrains
 channels:
   - conda-forge
@@ -8,5 +9,9 @@ dependencies:
   - python=3.10
   - pip
   - pip:
+      - --index-url https://download.pytorch.org/whl/cu121
+      - --extra-index-url https://pypi.org/simple
+      - torch==2.5.1+cu121
+      - torchvision==0.20.1+cu121
       - imagegrains==2.0.2
       - pillow-heif

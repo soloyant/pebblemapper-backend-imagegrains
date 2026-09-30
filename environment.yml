@@ -1,4 +1,4 @@
-# ImageGrains 1.x: Cellpose 2, a CNN that runs on a CPU in seconds.
+# ImageGrains 1.2: Cellpose 2, a CNN that runs on a CPU in seconds.
 name: pm-imagegrains1
 channels:
   - conda-forge

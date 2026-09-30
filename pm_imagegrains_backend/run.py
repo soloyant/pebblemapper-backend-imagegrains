@@ -1,4 +1,4 @@
-"""ImageGrains backend: subprocess entry point (runs in conda env 'pm-imagegrains').
+"""ImageGrains backend: subprocess entry point (runs in the generation's own conda env).
 
 Reads the PebbleMapper job spec (``--spec <json>``), segments each job image
 with an ImageGrains model (Mair et al.; a Cellpose model fine-tuned on

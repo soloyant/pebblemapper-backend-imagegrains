@@ -1,4 +1,6 @@
 [
  {"module": "pm_imagegrains_backend.backend", "factory": "make_backend",
+  "path": "C:/path/to/pebblemapper-backend-imagegrains"},
+ {"module": "pm_imagegrains_backend.backend", "factory": "make_backend_v1",
   "path": "C:/path/to/pebblemapper-backend-imagegrains"}
 ]
